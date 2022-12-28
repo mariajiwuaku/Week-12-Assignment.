@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="keywords" content="HTML 5, CSS 3,Javascript, JQuery, AngularJs">
+        <meta name="description" content="Dynamic Web Development">
+         <meta name="author" content="Maria-goretti">
+        <meta name="viewport" content="width=device-width,intial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="../css/main.css">
+        <link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css">
+        <style>
+           
+            #check{
+                text-align: center;
+                float: right;
+            }
+            div{
+                border: 5px solid blue;
+                margin: 10px;
+            }
+            p{
+                text-align: center;
+            }
+
+        </style>
+
+
+
+    </head>
+    <body>
+        <nav class="topnav">
+            <ul>
+                <li style="float: left;"><a href="#">Register New Client</a></li>
+               <li><a href="../index.html">Home</a></li>
+               <li><a href="#">Log Out</a></li>
+            </ul>
+        </nav>
+        <section>
+            <nav class="col-3">
+                <ul>
+                    <li><a href="../pages/patientpage.html">Personal Information</a></li>
+                    <li><a href="../pages/form2.html">Risk Factor Information</a></li>
+                    <li><a href="pages/form3.html">Hepatitis B Pregnant Women Reporting</a></li>
+                    <li><a href="../pages/form4.html">Congenital Syphilis</a></li>
+                    <li><a href="../pages/form5.html">Chlamydia & Gonorrhea</a></li>
+    
+        <article class="col-9">  
+        <form method="post" action="../pages/form4.html">  
+        
+        <h2>Massachusetts Department of Public Health</h2>
+        <h2>Bureau of Infectious Disease and</h2>
+        <h2>Laboratory services</h2>
+        <p>305 South Street,Room 563,Jamaica Plain,MA 02130<br>
+        Phone: 617-983-6800 Confidential Fax: 617-983-6220</p>
+        <label for="date">Received in Surveillance</label>
+        <input type="date" id="date" name="date">
+         
+        <h3>Hepatitis B Infected Pregnant Women Reporting.                 <small>(Confidential Case Report)</small></h3>
+    
+        <label for="Lastname"><b>Last Name:</b></label>
+        <input type="text" id="lastname" name="lastname">
+        <label for="fname" id="fname"><b>First Name:</b></label>
+        <input type="text" id="fname" name="fname">
+        <label for="mname"><b>Middle Name:</b></label>
+        <input type="text" id="mname" name="mname"><br>
+        <label for="date"><b>Date of Birth:</b></label>
+        <input type="date" id="d.o.b" name="d.o.b">
+        <label for="d.o.d"><b>Estimated Delivery Date:</b></label>
+        <input type="date" id="d.o.d" name="d.o.d">
+        <label for="aware"><b>Patient aware of HepB+ status?:</b></label>
+        <input id="aware" name="aware" type="radio" value="yes">Yes
+        <input id="aware" name="aware" type="radio" value="no">No
+        <input id="aware" name="aware" type="radio" value="unik">Unk<br>
+        <label for="address"><b>Address:</b></label>
+        <input id="address" type="text" name="address">
+        <label for="city"><b>City:</b></label>
+        <input type="text" id="city" name="city">
+        <label for="state"><b>State:</b></label>
+        <input id="state" type="text" name="state">
+        <label for="zip"><b>Zip:</b></label>
+        <input type="number" id="zip" name="zip"><br>
+        <label for="tel"><b>Phone Number:</b></label> 
+        <input id="tel" name="tel" type="tel" placeholder="(123)-567-8901" pattern="([0-9]{3})-[0-9]{3}-[0-9]{4}">
+        <label for="insurance"><b>Type of Insurance:</b></label>
+        <input id="insurance" name="insurance" type="radio" value="private">Private
+        <input id="insurance" name="insurance" type="radio" value="medicaid">Medicaid
+        <input id="insurance" name="insurance" type="radio" value="medicare">Medicare
+        <input id="insurance" name="insurance" type="radio" value="uninsured">Uninsured 
+        <input id="insurance" name="insurance" type="radio" value="unknown">Unknown<br>
+        <label for="race"><b>Race:</b></label>
+        <input id="race" name="race" type="radio" value="American">American Indian/Alaskan Native
+        <input id="race" name="race" type="radio" value="asian">Asian
+        <input id="race" name="race" type="radio" value="black">Black/African Am.
+        <input id="race" name="race" type="radio" value="native">Native Hawaiian/Pacific Islander
+        <input id="race" name="race" type="radio" value="white">White
+        <input id="race" name="race" type="radio" value="unk">Ukn
+        <input id="race" name="race" type="radio" value="other">Other  
+        <label for="hispanic"><b>Hispanic:</b></label>
+        <input id="race" name="race" type="radio" value="Yes">Yes 
+        <input id="race" name="race" type="radio" value="no">No 
+        <input id="race" name="race" type="radio" value="unk">Unk <br>
+        <label for="country"><b>Country of Birth</b></label>
+        <input type="text" id="country" name="country">
+        <label for="language"><b>Primary Language</b></label>
+        <input type="text" id="language" name="language"> <br>
+        <input type="checkbox" id="check" name="check" value="check">
+        <label for="language" id="check"><b>Check if Interpreter Needed:</b></label><br>
+        <h3>LABORATORY INFORMATION</h3>
+        <p><b>Laboratory Results:</b>Check off below any POSITIVE labs <u>and</u> attach positive Hep B lab results.</p>
+    
+        <input type="checkbox" id="hbsag" name="hbsag" value="hbsag">
+        <label for="hbsag">HBsAg (Hep B surface antigen)</label>
+        <input type="checkbox" id="hbeag" name="hbeag" value="hbeag">
+        <label for="hbeag">HBeAg (Hep Be antigen)</label><br>
+        <input type="checkbox" id="igm" name="igm" value="igm">
+        <label>IgM anti-HBc (IgM antibody to Hep B core antigen)</label>
+        <input type="checkbox" id="hbv" name="hbv" value="hbv">
+        <label for="hbv">HBV DNA (Hep B virus DNA)</label>
+
+        <h3>CLINICAL INFORMATION</h3>
+        <label for="ln"><b>OB Provider Last Name:</b></label>
+        <input type="text" id="ln" name="ln">
+        <label for="fn"><b>OB Provider First Name:</b></label>
+        <input type="text" id="fn" name="fn">
+        <label for="pro"><b>Provider Type</b></label>
+        <input type="radio" id="pro" name="pro" value="md/do">MD/DO
+        <input type="radio" id="pro" name="pro" value="cnm/np">CNM/NP
+        <input type="radio" id="pro" name="pro" value="pa">PA<br>
+        <label for="edf"><b>Expected Delivery Facility</b></label>
+        <input type="text" id="edf" name="edf">
+         <br>
+        <label for="report"><b>Reporting Health Care Facility</b></label>
+        <input type="text" id="report" name="report"><br>
+        <label for="add"><b>Address:</b></label>
+        <input type="text" id="add" name="add">
+        <label for="ci"><b>City:</b></label>
+        <input type="text" id="ci" name="ci">
+        <label for="state"><b>State:</b></label>
+        <input id="state" type="text" name="state">
+        <label for="zip"><b>Zip:</b></label>
+        <input type="number" id="zip" name="zip"><br>
+        <label for="tel"><b>Direct Phone:</b></label> 
+        <input id="tel" name="tel" type="tel" placeholder="(123)-567-890*1234" pattern="([0-9]{3})[0-9]{3}-[0-9]{4}*[0-9]{4}">
+        <label for="dat"><b>Date Form Completed</b></label>
+        <input type="date" id="dat" name="dat">
+        <input type="checkbox" id="labs" name="labs" value="positive labs attached">
+        <label for="labs">Positive Labs Attached</label><br><br>
+        <input type="submit" id="submit" value="Next">
+
+
+
+        </form>
+        
+        </article>
+        </section>
+    </body>
+</html>
