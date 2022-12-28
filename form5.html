@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="keywords" content="HTML 5, CSS 3,Javascript, JQuery, AngularJs">
+        <meta name="description" content="Dynamic Web Development">
+        <meta name="author" content="Maria-goretti">
+        <meta name="viewport" content="width=device-width,intial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="../css/main.css">
+        <link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css">
+        <style>
+            div{
+                border: solid 5px rgb(233, 21, 21);
+            }
+            h3{
+                background-color: rgb(240, 154, 154);
+            }
+            h5{
+                background-color: rgb(180, 161, 161);
+            }
+            table, th, td {
+                border: 1px solid;
+                border-collapse: collapse;
+            }
+        </style>
+
+
+    </head>
+    <body>
+        <nav class="topnav">
+            <ul>
+                <li style="float: left;"><a href="#">Register New Client</a></li>
+               <li><a href="../index.html">Home</a></li>
+               <li><a href="#">Log Out</a></li>
+            </ul>
+        </nav>
+        <section>
+            <nav class="col-3">
+                <ul>
+                    <li><a href="../pages/patientpage.html">Personal Information</a></li>
+                    <li><a href="../pages/form2.html">Risk Factor Information</a></li>
+                    <li><a href="../pages/form3.html">Hepatitis B Pregnant Women Reporting</a></li>
+                    <li><a href="../pages/form4.html">Congenital Syphilis</a></li>
+                    <li><a href="pages/form5.html">Chlamydia & Gonorrhea</a></li>
+    
+        <article class="col-9">
+        <div>
+            <h4>Washington Country Department of Health and Human Services</h4>
+            <p>Return completed form to Washington County Public Health Disease Control and Prevention</p>
+            <p>FAX: 503-846-3664   * Call with questions: 503-846-2972</p>
+            <h2>STI Case Reporting Form for Chlamydia and Gonorrhea</h2>
+            <h3>Clinic Information</h3>
+            <form method="post" action="" autocomplete="off">
+            <table>
+                <tr>
+                    <th>Date:</th>
+                    <td><input type="date" name="dateofreport" id="dateofreport"></td>
+                    <th>Person Completing the form: </th>
+                    <td><input type="text" name="nameofreporter" id="nameofreporter"</td>
+                </tr>
+                <tr>
+                    <th>Health Provider</th>
+                    <td><input type="text" name="hp" id="hp"></td>
+                    <th>Contact Phone Number / Fax :</th>
+                    <td><input type="tel" id="fax" name="fax"</td>
+                </tr>
+            </table>
+            
+            <p>Your lab reported a communicable disease on the patient shown below and listed you as a Provider.
+                The Oregon Department of Human Services and Washington County require additional information. The fax cover sheet you have received references Oregon
+                law(ORS 433) that requires you to report this information.
+                <b>Please complete the form <u>within 24hours</u>,or by the end of the next working day,and fax it back to our office at 503-846-3664</b>. 
+                If you prefer you may call to report the required information.We appreciate your cooperation and prompt handling of this confidential report.
+            </p>
+            <h3>Patient Information - Please complete all information requested below</h3>
+        
+            <table>
+                <tr>
+                    <th>NAME:</th>
+                    <td><input type="text" id="name" name="name" value="name"></td>
+                    <th>DATE OF DATE:</th>
+                    <td><input type="date" id="dob" name="dob" value="Date of birth"></td>
+                    <th>GENDER:</th>    
+                    <td><input type="radio" id="gender" name="gender" value="male">male</td><br>
+                    <td><input type="radio" id="gender" name="gender" value="female">female</td><br>
+                    <td><input type="radio" id="gender" name="gender" value="other">other</td><br>
+                </tr>
+            <tr>  
+            <th>HOME:</th>
+            <td><input type="text" id="home" name="home" value="street"></td>
+            <th>CITY:</th>
+            <td><input type="text" id="city" name="city" value="city/state"></td>
+            <th>ZIP:</th>
+            <td><input type="number" id="zip" name="zip" value="Zip"></td><br>
+            </tr>
+            <tr>
+            <th>PHONE NUMBER:</th>
+            <td><input type="tel" id="tel" name="tel" placeholder="(123)-567-8901" pattern="([0-9]{3})-[0-9]{3}-[0-9]{4}"></td><br>
+            <th>Alternative:</th>
+            <td><input type="tel" id="alt" name="alt" placeholder="(123)-567-8901" pattern="([0-9]{3})-[0-9]{3}-[0-9]{4}"></td><br>
+            </tr>
+            <tr>
+            <th>PREGNANCY TEST RESULTS:</th>
+            <td><input type="radio" id="pt" name="pt" value="n/a">N/A </td>
+            <td><input type="radio" id="pt" name="pt" value="negative">Negative </td>
+            <td><input type="radio" id="pt" name="pt" value="unk">Unknown </td>
+            <td><input type="radio" id="pt" name="pt" value="positive">Positive: </td> <br>
+            
+            <td><input type="text" id="pt" name="pt" value="if positive how many weeks">If positive how many weeks?<br></td>
+            </tr>
+            </table>
+                <label for="ethnic">ETHNICITY:</label>
+                    <input type="radio" id="ethnic" name="ethnic" value="hispanic or latino">Hispanic or Latino
+                    <input type="radio" id="ethnic" name="ethnic" value="non hispanic or latino">Non-Hispanic or Latino
+                    <input type="radio" id="ethnic" name="ethnic" value="unk">unk
+                    <br>
+         <label for="race">RACE:</label>
+        <input id="race" name="race" type="radio" value="American">American Indian/Alaskan Native
+        <input id="race" name="race" type="radio" value="asian">Asian
+        <input id="race" name="race" type="radio" value="black">Black/African Am.
+        <input type="radio" id="ethnic" name="ethnic" value="Alaskan">Alaskan
+        <input id="race" name="race" type="radio" value="native">Native Hawaiian/Pacific Islander
+        <input id="race" name="race" type="radio" value="white">White
+        <input id="race" name="race" type="radio" value="unk">Ukn
+        <input id="race" name="race" type="radio" value="other">Other <br>
+        <label for="sp">GENDER OF SEX PARTNER(S):</label>
+        <input type="radio" id="sp" name="sp" value="MAle">male
+        <input type="radio" id="sp" name="sp" value="femalele">Female
+        <input type="radio" id="sp" name="sp" value="both">both
+        <input type="radio" id="sp" name="sp" value="unk">Unk<br>
+
+        <label for="test">TEST RESULT TYPE:</label>
+        <input type="radio" id="test" name="test" value="chlamydia positive result">Chlamydia positive result.
+        <input type="date" id="test" name="test">
+        <input type="radio" id="test" name="test" value="Gonorrhea positive result">Gonorrhea positive result.
+        <input type="date" id="test" name="test"><br>
+        <label for="hiv">PREVIOUS HIV TESTING: if yes,last result was ?</label>
+        <input type="radio" id="hiv" name="hiv" value="yes">yes
+        <input type="radio" id="hiv" name="hiv" value="no">No
+        <input type="radio" id="hiv" name="hiv" value="unk">unk<br>
+        <input type="radio" id="hiv" name="hiv" value="pos">Positive
+        <input type="radio" id="hiv" name="hiv" value="neg">Negative
+        <input type="radio" id="hiv" name="hiv" value="unk">unk
+        <input type="date" id="hiv" name="hiv" pattern="month year"><br>
+
+        <label for="exam">REASON FOR EXAM:</label>
+        <input type="radio" id="exam" name="exam" value="symptomatic">Symptomatic 
+        <input type="radio" id="exam" name="exam" value="routine exam">Routine Exam 
+        <input type="radio" id="exam" name="exam" value="test for cure">Test for Cure 
+        <input type="radio" id="exam" name="exam" value="exposed to infection">Exposed to Infection 
+        <input type="radio" id="exam" name="exam" value="pregnant">Pregnant<br>
+        <label for="dia">DIAGNOSIS:</label>
+        <input type="radio" id="dia" name="dia">Asymptomatic
+        <input type="radio" id="dia" name="dia">Symptomatic-Uncomplicated
+        <input type="radio" id="dia" name="dia">Pelvic Inflammatory Disease (PID)
+        <input type="radio" id="dia" name="dia">Ophthalmia /Conjunctivitis
+        <input type="radio" id="dia" name="dia">Disseminated<br>
+
+        <label for="site">SITE(S):</label>
+        <input type="radio" id="site" name="site">Cervix
+        <input type="radio" id="site" name="site">Vaginal
+        <input type="radio" id="site" name="site">Urethra
+        <input type="radio" id="site" name="site">Rectum
+        <input type="radio" id="site" name="site">Ocular
+        <input type="radio" id="site" name="site">Urine
+        <input type="radio" id="site" name="site">Pharynx
+        <input type="radio" id="site" name="site">Other:<br>
+
+        <h3>GONORRHEA TREATMENT PLAN:</h3>
+        <p>Rocephin/Ceftriaxone 25omg IM &times; 1.</p>
+        <input type="date" id="date"  name="date">
+        <p><b>PLUS</b></p>
+        <p>Azithromycin 1gm orally in a single dose</p>
+        <h5>Alternative Treatment Regimens</h5>
+        <p>Ceftriaxone 400mg orally in a single dose.</p>
+        <input type="date" id="date"  name="date">
+        <p><b>PLUS</b></p>
+        <p>Azithromycin 1gm orally in a single dose</p>
+        <hr>
+        <input type="text" id="other" name="other">Other Treatment:
+        <input type="date" id="date"  name="date">
+        <input type="text" id="toc" name="toc" >(test of cure recommended at 1 month)
+        <h3>CHLAMYDIA TREATMENT PLAN:</h3>
+        <p>Azithromycin 1gm orally in a single dose.</p>
+        <input type="date" id="date"  name="date">
+        <p>Doxycycline 100mg BID &times; 7days.(<i>contraindicated during pregnancy)</i></p>
+        <input type="date" id="date"  name="date">
+        <h5>Alternative Treatment Regimens</h5>
+        <p>Amoxicillin 500mg orally tid &times; 7 days</p>
+        <input type="date" id="date"  name="date"><br>
+        <hr>
+        <input type="text" id="other" name="other">Other Treatment:
+        <input type="date" id="date"  name="date"><br>
+        <label for="not"><b>IF NOT TREATED YET-PATIENT NOTIFED OF INFECTION</b></label>
+        <input type="radio" id="not" name="not">Yes 
+        <input type="radio" id="not" name="not">No<br>
+        <label><b>Does the provider need assistance in contacting a client that has not responded for Treatment?</b></label>
+        <input type="radio" id="not" name="not">Yes 
+        <input type="radio" id="not" name="not">No<br>
+        <h3>PARTNER MANAGEMENT PLAN - Ensuring Partner Treatment</h3>
+        <label><b>Expedited Partner Therapy dispensed at time of visit?</b></label>
+        <input type="radio" id="not" name="not">No
+        <input type="radio" id="not" name="not">YES: How many partners?<br>
+        <p><b>(see:OHA/STD Prevention for EPT guidelines and policy).</b></p>
+        <hr>
+        <p>When resources allow the health department will be contacting gonorrhea cases and high risk chlamydia cases to offer partner services.</p>
+        <p>Please notify patient that public health worker may be contacting them to offer partner services.</p>
+        <input type="checkbox" id="check" name="check">PROVIDER REQUEST THAT CLIENT NOT BE CONTACTED BY PUBLIC HEALTH/PROVIDER WILL ASSURE PARTNER TREATMENT.
+        </table>
+    </form>
+        </div>
+        <footer>
+            <p><b>CURRENT RECOMMENDED TREATMENT- See CDC Guidelines at: www.cdc.gov/std/treatment/</b></p>
+
+        </footer>
+        <p>STI CT,GC Case Reporting Form,07/16</p>
+    </article>
+    </section>
+
+
+    </body>
+</html>
